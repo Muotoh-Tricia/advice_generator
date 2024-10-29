@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+
+/* primary color */
+---LightCyan: hsl(193, 38%, 86%);
+---NeonGreen: hsl(150, 100%, 66%);
+
+/* neutral color */
+---GrayishBlue: hsl(217, 19%, 38%);
+---DarkGrayishBlue: hsl(217, 19%, 24%);
+---DarkBlue: hsl(218, 23%, 16%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'manrope' ;
+}
+
+body {
+    background-color: var(---DarkBlue);
+}
+
+.container {
+    background-color: var(---DarkGrayishBlue);
+    color: var(---LightCyan);
+    width:30%;
+    /* height: 35%; */
+    min-height: 37%;
+    border-radius: 10px;
+    margin: 100px auto;
+    font-size: 16px;
+    padding: 20px; 
+    /* position: relative; */
+}
+
+p {
+    color: var(---NeonGreen);
+    font-size: 8px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px;
+}
+
+#advice {
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.advice-divider > img {
+    width: 20%;
+    margin-top: -180px;
+    margin-left: 620px;
+   
+}
+
+#Generate-advice {
+    background-color: var(---NeonGreen);
+    padding: 15px;
+    border: none;
+    border-color: var(---NeonGreen);
+    border-radius: 30px;
+    align-items: center;
+    margin-left: 744px;
+    margin-top: -120px;
+    /* position: absolute;
+    bottom: -16px;
+    left: 200px; */
+}
+
+#Generate-advice:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px hsl(150, 100%, 66%);
+}
+
+
+/* responsiveness  */
+@media only screen and (max-width: 1500px) {
+    .advice-divider > img {
+        margin-left: 585px;
+    }
+
+    #Generate-advice {
+        margin-left: 700px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .advice-divider > img {
+        width: 25%;
+        margin-left: 388px;
+    }
+
+    #Generate-advice {
+        margin-left: 485px;
+    }
+}
+
+@media only screen and (max-width: 780px ) {
+    .container {
+        width: 35%;
+    }
+
+    .advice-divider > img {
+        margin-top: -140px;
+        margin-left: 289px;
+    }
+
+    #Generate-advice {
+        padding: 7px;
+        margin-left: 365px;
+    }
+}
+
+@media only screen and (max-width: 450px ) {
+    .container {
+         width: 70%;
+    }
+
+    .advice-divider > img {
+        width: 45%;
+        margin-top: -150px;
+        margin-left: 125px;
+    }
+
+    #Generate-advice {
+        padding: 7px;
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (max-width: 380px ) {
+    .advice-divider > img {
+        margin-top: -140px;
+        margin-left: 109px;
+    }
+
+    #Generate-advice {
+        padding: 7px;
+        margin-left: 175px;
+    }
+}
+
+@media only screen and (max-width: 320px ) {
+    .container {
+       width: 90%;
+    }
+
+    .advice-divider > img {
+        margin-top: -140px;
+        margin-left: 93px;
+    }
+
+    #Generate-advice {
+        padding: 7px;
+        margin-left: 145px;
+    }
+}
